@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin-left: 550px;
+            margin-right: 600px;
+            margin-top: 80px;
+            padding-left: -200px;
+            background-color: rgb(112, 142, 30);
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif
+        }
+        form{
+            margin-left: 20px;
+        }
+        fieldset{
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #submit, #reset {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-left: 50px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #submit:hover, #reset:hover {
+            background-color: darkblue;
+        }
+        #name, #email, #password, #dob, #address {
+            width: 250px;
+        }
+    </style>
+    </head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <form action="submit.html" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="password">Confirm Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="gender">Gender</label><br>
+            <input type="radio" id="gender" name="gender" required>Male
+            <input type="radio" id="gender" name="gender" required>Female
+            <input type="radio" id="gender" name="gender" required>Other<br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for ="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" id="reset" value="Reset">
+</body>
